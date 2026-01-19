@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gig Worker Analytics Dashboard
 
-## Getting Started
+An interactive, modern dashboard visualizing gig worker data from the U.S. Census Bureau's Current Population Survey (CPS) May 2017 Contingent Worker Supplement.
 
-First, run the development server:
+![Dashboard Preview](preview.png)
+
+## 🚀 Features
+
+- **Interactive Charts**: Click, hover, and explore data with Plotly.js
+- **Modern UI**: Built with Next.js 14, Tailwind CSS, and Framer Motion
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Dark Theme**: Professional dark mode aesthetic
+- **Real Data**: Verified statistics from ICPSR 37191
+
+## 📊 Data Visualizations
+
+- **Age Distribution**: Demographics of gig workers by age group
+- **Top Occupations**: Transportation, tech, arts, and more
+- **Household Income**: Income distribution across brackets
+- **Work Hours**: Weekly hours distribution with 40-hour benchmark
+- **Weekly Wages**: Earnings distribution with mean/median
+- **Employment Status**: Active employment rates
+- **Gig vs Non-Gig Comparison**: Age demographics compared
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Charts**: Plotly.js with react-plotly.js
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+cd gig-worker-dashboard
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Deployment on Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Push your code to GitHub
+2. Import the repository in [Vercel](https://vercel.com)
+3. Deploy with default settings
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Or use the Vercel CLI:
 
-## Learn More
+```bash
+npm i -g vercel
+vercel
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📈 Data Source
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Survey**: Current Population Survey (CPS)
+- **Supplement**: Contingent Worker Supplement
+- **Date**: May 2017
+- **Source**: U.S. Bureau of Labor Statistics & U.S. Census Bureau
+- **ICPSR Study**: 37191-V2
+- **Sample Size**: 148,623 records (462 gig workers identified)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔍 Key Findings
 
-## Deploy on Vercel
+| Metric | Value |
+|--------|-------|
+| Total Gig Workers | 462 (1.0% of workforce) |
+| Median Age | 42 years |
+| Median Work Hours | 40 hrs/week |
+| Median Weekly Wage | $600 |
+| Top Occupation | Transportation & Moving (19.7%) |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - feel free to use this for your own projects!
+
+## 🙏 Acknowledgments
+
+Data provided by the Inter-university Consortium for Political and Social Research (ICPSR).
